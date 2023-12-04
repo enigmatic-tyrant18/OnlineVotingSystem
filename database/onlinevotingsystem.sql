@@ -1,11 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 5.1.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Nov 02, 2022 at 08:16 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 7.4.27
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,9 +34,7 @@ CREATE TABLE `candidate_details` (
 -- Dumping data for table `candidate_details`
 --
 
-INSERT INTO `candidate_details` (`id`, `election_id`, `candidate_name`, `candidate_details`, `candidate_photo`, `inserted_by`, `inserted_on`) VALUES
-(2, 2, 'Ali', 'abc', '../assets/images/candidate_photos/43944385300_31936791168web icons-06.png', 'Shoaib', '2022-10-29'),
-(3, 2, 'Shoaib', 'xyz', '../assets/images/candidate_photos/54153203372_20775697032web icons-07.png', 'Shoaib', '2022-10-29');
+
 
 -- --------------------------------------------------------
 

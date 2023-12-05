@@ -135,7 +135,7 @@
         }
 
         // inserting into db
-        mysqli_query($db, "INSERT INTO elections(election_topic, no_of_candidates, starting_date, ending_date, status, inserted_by, inserted_on) VALUES('". $election_topic ."', '". $number_of_candidates ."', '". $starting_date ."', '". $ending_date ."', '". $status ."', '". $inserted_by ."', '". $inserted_on ."')") or die(mysqli_error($db));
+        mysqli_query($db, "INSERT INTO elections(election_topic, no_of_candidates, starting_date, ending_date, status , inserted_by, inserted_on) VALUES('". $election_topic ."', '". $number_of_candidates ."', '". $starting_date ."', '". $ending_date ."', '". $status ."', '". $inserted_by ."', '". $inserted_on ."')") or die(mysqli_error($db));
         
     ?>
             <script> location.assign("index.php?addElectionPage=1&added=1"); </script>

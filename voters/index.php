@@ -96,7 +96,7 @@
     </div>
 
 
-<script>
+    <script>
     const CastVote = (election_id, customer_id, voters_id) => 
     {
         $.ajax({
@@ -116,6 +116,7 @@
     }
 
 </script>
+
 
 
 

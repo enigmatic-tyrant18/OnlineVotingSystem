@@ -99,19 +99,24 @@
     <script>
     const CastVote = (election_id, customer_id, voters_id) => 
     {
+    
         $.ajax({
             type: "POST", 
             url: "inc/ajaxCalls.php",
             data: "e_id=" + election_id + "&c_id=" + customer_id + "&v_id=" + voters_id, 
+            
             success: function(response) {
-                
+                console.log(response)
                 if(response == "Success")
                 {
                     location.assign("index.php?voteCasted=1");
                 }else {
                     location.assign("index.php?voteNotCasted=1");
                 }
-            }
+            },
+            error: function(xhr, status, error) {
+                console.error("AJAX Error: " + status + " - " + error);
+    }
         });
     }
 

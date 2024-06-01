@@ -79,7 +79,7 @@
                             <th>S.No</th>
                             <th>Voter Name</th>
                             <th>Contact No</th>
-                            <th>Voted To</th>
+                            <!-- <th>Voted To</th> -->
                             <th>Date </th>
                             <th>Time</th>
                         </tr>
@@ -116,7 +116,7 @@
                                 <td><?php echo $sno++; ?></td>
                                 <td><?php echo $username; ?></td>
                                 <td><?php echo $contact_no; ?></td>
-                                <td><?php echo $candidate_name; ?></td>
+                                <!-- <td><?php echo $candidate_name; ?></td> -->
                                 <td><?php echo $data['vote_date']; ?></td>
                                 <td><?php echo $data['vote_time']; ?></td>
                             </tr>

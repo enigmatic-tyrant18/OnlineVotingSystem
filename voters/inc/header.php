@@ -1,5 +1,8 @@
 <?php 
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+
     require_once("../admin/inc/config.php");
 
     if($_SESSION['key'] != "VotersKey")
@@ -30,10 +33,6 @@
                 <h3> ONLINE VOTING SYSTEM  -  Welcome Voters  </h3>
             </div>
         </div>
-
- 
-
-
 
 
 

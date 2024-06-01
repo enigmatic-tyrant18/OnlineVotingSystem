@@ -1,7 +1,7 @@
 
     <div class="row bg-black text-center text-white">
         <div class="col-12 my-3">
-            <p> &copy; Copyright 2023 - All Rights Reserved  <br />
+            <p> &copy; Copyright 2024 - All Rights Reserved  <br />
             </p>
         </div>
     </div>

@@ -3,11 +3,11 @@
         margin: 0;
         padding: 0;
         height: 100%;
-        /* background: #000 !important; */
+        background: #000 !important;
     }
     .user_card {
-        height: 400px;
-        width: 350px;
+        height: 500px;
+        width: 400px;
         margin-top: auto;
         margin-bottom: auto;
         background: #303030;

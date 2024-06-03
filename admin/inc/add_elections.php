@@ -22,7 +22,9 @@ if (isset($_POST['addElectionBtn']) || isset($_POST['editElectionBtn'])) {
 
     $current_date = date("Y-m-d");
 
-    if ($starting_date >= $current_date && $ending_date >= $current_date) {
+    if ($number_of_candidates < 2) {
+        echo '<div class="alert alert-danger my-3" role="alert">Number of candidates must be at least 2.</div>';
+    } elseif ($starting_date >= $current_date && $ending_date >= $current_date) {
         $date1 = date_create($inserted_on);
         $date2 = date_create($starting_date);
         $diff = date_diff($date1, $date2);

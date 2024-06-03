@@ -59,6 +59,12 @@
                                     </div>
                                     <input type="email" name="su_email" class="form-control input_user" placeholder="Email" required />
                                 </div>
+                                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" name="su_username" class="form-control input_user" placeholder="Username" required />
+                </div>
                                 <div class="input-group mb-2">
                                     <div class="input-group-append">
                                         <span class="input-group-text"><i class="fas fa-phone"></i></span>
@@ -233,6 +239,7 @@
     session_start();
     if(isset($_POST['sign_up_btn']))
     {
+        $su_username = mysqli_real_escape_string($db, $_POST['su_username']);
         $su_email = mysqli_real_escape_string($db, $_POST['su_email']);
         $su_contact_no = mysqli_real_escape_string($db, $_POST['su_contact_no']);
         $su_password = mysqli_real_escape_string($db, sha1($_POST['su_password']));
@@ -268,8 +275,8 @@
 
         if($su_password == $su_retype_password)
         {
-            mysqli_query($db, "INSERT INTO users(email, contact_no, password, user_role) VALUES('". $su_email ."', '". $su_contact_no ."', '". $su_password ."', '". $user_role ."')") or die(mysqli_error($db));
-        ?>
+            mysqli_query($db, "INSERT INTO users(username, email, contact_no, password, user_role) VALUES('". $su_username ."', '". $su_email ."', '". $su_contact_no ."', '". $su_password ."', '". $user_role ."')") or die(mysqli_error($db));
+            ?>  
             <script> location.assign("index.php?sign-up=1&registered=1"); </script>
         <?php
 

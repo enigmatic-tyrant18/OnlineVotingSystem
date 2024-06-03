@@ -3,7 +3,7 @@
         margin: 0;
         padding: 0;
         height: 100%;
-        background: #000 !important;
+        /* background: #000 !important; */
     }
     .user_card {
         height: 400px;
@@ -28,7 +28,7 @@
         width: 170px;
         top: -75px;
         border-radius: 50%;
-        background: #fff;
+        background: #333abc;
         padding: 10px;
         text-align: center;
     }
@@ -43,8 +43,10 @@
     }
     .login_btn {
         width: 100%;
-        background: #68C230 !important;
+        background: #333abc !important;
         color: white !important;
+        border-style:solid !important;
+        border-radius: 4px !important
     }
     .login_btn:focus {
         box-shadow: none !important;
@@ -54,7 +56,7 @@
         padding: 0 2rem;
     }
     .input-group-text {
-        background: #68C230 !important;
+        background: #333abc !important;
         color: white !important;
         border: 0 !important;
         border-radius: 0.25rem 0 0 0.25rem !important;

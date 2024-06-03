@@ -1,4 +1,7 @@
 <?php 
+    // Set the default timezone to Indian Standard Time
+    date_default_timezone_set('Asia/Kolkata');
+    
     $election_id = $_GET['viewResult'];
 
 ?>
@@ -118,7 +121,7 @@
                                 <td><?php echo $contact_no; ?></td>
                                 <!-- <td><?php echo $candidate_name; ?></td> -->
                                 <td><?php echo $data['vote_date']; ?></td>
-                                <td><?php echo $data['vote_time']; ?></td>
+                                <td><?php echo date("H:i:s", strtotime($data['vote_time'])); ?></td>
                             </tr>
                 <?php
                         }
@@ -126,17 +129,8 @@
                     }else {
                         echo "No any vote detail is available!";
                     }
-
-
-
-
-
-
-
                 ?>
             </table>
             
         </div>
     </div>
-
-
